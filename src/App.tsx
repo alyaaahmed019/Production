@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { AppRoutes } from './routes/AppRoutes';
 import { createAppTheme } from './theme';
@@ -13,9 +13,9 @@ function ThemedApp() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter>
+      <HashRouter>
         <AppRoutes />
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
